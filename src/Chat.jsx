@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import ScrollToBottom from "react-scroll-to-bottom";
 import "./App.css";
 import { v4 as uuidv4 } from "uuid";
-import { IoMdSend } from "react-icons/io";
+// import { IoMdSend } from "react-icons/io";
 
 const Chat = ({ socket, userName, room }) => {
   const [message, setMessage] = useState("");
@@ -85,7 +85,8 @@ const Chat = ({ socket, userName, room }) => {
           }}
         />
         <button onClick={sendMessage}>
-          <IoMdSend />
+          {/* <IoMdSend /> */}
+          send
         </button>
       </div>
     </div>
